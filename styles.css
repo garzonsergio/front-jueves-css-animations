@@ -1,0 +1,26 @@
+html {
+  box-sizing: border-box;
+
+  /* Fonts properties */
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 62.5%;
+
+  /* colors */
+  --yellow-javascript: #f7df1e;
+  --black: #000000;
+}
+.banner-container {
+  align-items: flex-end;
+  background-color: var(--yellow-javascript);
+  display: flex;
+  font-size: 6rem;
+  height: 10rem;
+  justify-content: flex-end;
+  padding-right: 1rem;
+  text-transform: uppercase;
+  width: 8.5rem;
+}
+
+.ueve-string {
+  display: none;
+}
