@@ -1,6 +1,9 @@
-html {
+* {
   box-sizing: border-box;
-
+  margin: 0;
+  padding: 0;
+}
+html {
   /* Fonts properties */
   font-family: "Source Sans Pro", sans-serif;
   font-size: 62.5%;
@@ -11,16 +14,34 @@ html {
 }
 .banner-container {
   align-items: flex-end;
-  background-color: var(--yellow-javascript);
+  /* background-color: var(--yellow-javascript); */
   display: flex;
   font-size: 6rem;
   height: 10rem;
   justify-content: flex-end;
   padding-right: 1rem;
   text-transform: uppercase;
-  width: 8.5rem;
+  width: 9rem;
 }
 
-.ueve-string {
-  display: none;
+.j-string,
+.ueves-string {
+  display: flex;
+  background-color: var(--yellow-javascript);
+  height: 100%;
+  align-items: flex-end;
+}
+.j-string {
+  z-index: 2;
+  position: absolute;
+  left: 0.1rem;
+  padding-left: 1.8rem;
+}
+.ueves-string {
+  left: 0;
+  z-index: 1;
+}
+.ueves-string:hover {
+  transform: translate(13.5rem, 0);
+  transition: transform 0.6s cubic-bezier(0.61, 1, 0.88, 1);
 }
