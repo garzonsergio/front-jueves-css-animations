@@ -21,7 +21,6 @@ html {
   justify-content: flex-end;
   padding-right: 1rem;
   text-transform: uppercase;
-  width: 9rem;
 }
 
 .j-string,
@@ -38,10 +37,13 @@ html {
   padding-left: 1.8rem;
 }
 .ueves-string {
-  left: 0;
+  position: absolute;
+  left: -50.2rem;
+
   z-index: 1;
+  max-width: fit-content;
 }
 .ueves-string:hover {
-  transform: translate(13.5rem, 0);
+  transform: translate(55rem, 0);
   transition: transform 0.6s cubic-bezier(0.61, 1, 0.88, 1);
 }
